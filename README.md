@@ -25,7 +25,5 @@ Test the live demo here: https://siymx.github.io/GreenField/
 
 ## Credits
 
-
-
 Created by Khandakar Sayeem and Khandakar Mahin
 ---
