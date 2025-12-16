@@ -1,0 +1,94 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Green Field</title>
+  <link rel="stylesheet" href="./styles.css" />
+
+  <script type="importmap">
+    {
+      "imports": {
+        "green": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+        "green/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/",
+        "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="ui" class="glass">
+    <div class="ui-title">Green Field</div>
+    <div class="ui-sub">Orbit: left-drag • Pan: right-drag • Zoom: wheel</div>
+
+    <div class="ui-grid">
+      
+      <div class="ui-row">
+        <label class="ui-label" for="grassDensity">
+          <span>Grass density</span>
+          <span class="ui-value" id="grassDensityValue">70%</span>
+        </label>
+        <input id="grassDensity" type="range" min="0" max="100" value="70" step="1" />
+      </div>
+
+      <div class="ui-row">
+        <label class="ui-label" for="windStrength">
+          <span>Wind strength</span>
+          <span class="ui-value" id="windStrengthValue">35%</span>
+        </label>
+        <input id="windStrength" type="range" min="0" max="100" value="35" step="1" />
+      </div>
+
+      <div class="ui-row">
+        <label class="ui-label" for="treeCount">
+          <span>Tree count</span>
+          <span class="ui-value" id="treeCountValue">60%</span>
+        </label>
+        <input id="treeCount" type="range" min="0" max="100" value="60" step="1" />
+      </div>
+
+      <div class="ui-row">
+        <label class="ui-label" for="weather">
+          <span>Weather</span>
+          <span class="ui-pill" id="weatherPill">Clear</span>
+        </label>
+        <select id="weather">
+          <option value="clear" selected>Clear</option>
+          <option value="misty">Misty</option>
+          <option value="stormy">Stormy</option>
+        </select>
+      </div>
+
+      <div class="ui-row">
+  <label class="ui-label" for="timeOfDay">
+    <span>Time of day</span>
+    <span class="ui-value" id="timeOfDayValue">6h</span>
+  </label>
+  <div class="ui-tod">
+    <div class="ui-tod-labels">
+      <span>Dawn</span>
+      <span>Night</span>
+    </div>
+    <input id="timeOfDay" type="range" min="0" max="24" value="6" step="1" />
+  </div>
+</div>
+
+
+    <p class="ui-tips">
+      Tip: Try setting the weather to Misty or Stormy.
+    </p>
+
+    <div class="credits">
+      Created by <strong>Khandakar Sayeem</strong> and
+      <strong>Khandakar Mahin</strong>
+    </div>
+  
+  </div>
+
+  
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
