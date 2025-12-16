@@ -6,8 +6,6 @@ A lightweight 3D scene built with Three.js that renders a scenic field with a ho
 
 
 ---
-## Live Demo
-
 
 Test the live demo here: https://siymx.github.io/GreenField/
 ---
